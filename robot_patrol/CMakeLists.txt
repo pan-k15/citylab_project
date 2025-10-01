@@ -14,7 +14,7 @@ find_package(nav_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(rclcpp_action REQUIRED)
 
-add_executable(robot_patrol_node src/patrol.cpp)
+add_executable(robot_patrol_node src/patrol_v3.cpp)
 ament_target_dependencies(robot_patrol_node rclcpp sensor_msgs)
 
 install(TARGETS
